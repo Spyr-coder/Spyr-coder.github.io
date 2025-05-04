@@ -1,71 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jerremmy Otieno | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">  
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jerremmy Otieno | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Jerremmy Otieno</h1>
-        <p>Cybersecurity Enthusiast | Biochemistry Student | Web Developer in the Making | Digital Innovator</p>
-    </header>
+  <header>
+    <h1>Jerremmy Otieno</h1>
+    <p>Cybersecurity Enthusiast | Biochemistry Student | Web Developer in the Making | Digital Innovator</p>
+  </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#documents">Documents</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#documents">Documents</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! I'm Jerremmy Otieno, a passionate individual bridging the worlds of cybersecurity, biochemistry, and web development. With a deep curiosity for artificial intelligence, digital innovation, and real-world scientific applications, I continuously seek to learn, grow, and create impactful solutions.</p>
-        </section>
+  <main>
+    <!-- About -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm Jerremmy Otieno, a passionate individual bridging the worlds of cybersecurity, biochemistry, and web development...</p>
+    </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Here are some of the projects I've worked on. (You can describe your real projects here!)</p>
-            <!-- You can add your project details here later -->
-        </section>  
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>Here are some of the projects I've worked on. (You can describe your real projects here!)</p>
+    </section>
 
-        <section id="documents">
-            <h2>Certificates and Documents</h2>
-            <div class="document-gallery">
-                <img src="images/certificate1.jpg" alt="Certificate 1">
-                <img src="images/certificate2.jpg" alt="Certificate 2">
-                <img src="images/certificate3.jpg" alt="Certificate 3">
-            </div>
-        </section>
+    <!-- Image Gallery -->
+    <section>
+      <h2>Image Gallery</h2>
+      <div>
+        <img id="galleryImg" src="images/certificate3.jpg" width="200" />
+        <button onclick="nextImage()">Next</button>
+      </div>
+    </section>
 
-        <section id="resume">
-            <h2>Resume</h2>
-            <p>Passionate about cybersecurity, web development, and biochemical innovation. Dedicated to applying scientific knowledge to real-world digital solutions.</p>
-            <a href="documents/Jerremmy-Otieno-Resume.pdf" download class="btn">Download My Resume</a>
-        </section>
+    <!-- Tabs -->
+    <section>
+      <h2>Tabbed Content</h2>
+      <div class="tabs">
+        <button onclick="showTab('tab1')">Tab 1</button>
+        <button onclick="showTab('tab2')">Tab 2</button>
+      </div>
+      <div id="tab1" class="tab-content">Content for Tab 1</div>
+      <div id="tab2" class="tab-content" style="display:none;">Content for Tab 2</div>
+    </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:jerryotize@gmail.com">jerryotize@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/jeremy-otieno-6a952a32b" target="_blank">https://www.linkedin.com/in/jeremy-otieno-6a952a32b</a></p>
-            <p>GitHub: <a href="https://github.com/Spyr-coder" target="_blank">github.com/Spyr-coder</a></p>
-        </section>
-    </main>
+    <!-- Interactive JS Features -->
+    <section>
+      <h2>Interactive Fun Zone 🎮</h2>
 
-    <footer>
-        <p>© 2025 Jerremmy Otieno. All rights reserved.</p>
-    </footer>
+      <!-- Click Event -->
+      <button id="clickBtn">Click Me!</button>
+      <p id="clickMessage"></p>
 
-<script src="script.js"></script>
-    <button id="clickBtn">Click Me!</button>
-<p id="clickMessage"></p>
+      <!-- Keypress -->
+      <input type="text" id="keypressInput" placeholder="Type something" />
+      <p id="keyDisplay"></p>
 
+      <!-- Double Click -->
+      <button id="secretBtn">Double Click Me!</button>
+      <p id="secretMessage"></p>
+
+      <!-- Change Color -->
+      <button id="colorChangeBtn">Change my color</button>
+    </section>
+
+    <!-- Documents -->
+    <section id="documents">
+      <h2>Certificates and Documents</h2>
+      <div class="document-gallery">
+        <img src="images/certificate1.jpg" alt="Certificate 1" />
+        <img src="images/certificate2.jpg" alt="Certificate 2" />
+        <img src="images/certificate3.jpg" alt="Certificate 3" />
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>Passionate about cybersecurity, web development, and biochemical innovation...</p>
+      <a href="documents/Jerremmy-Otieno-Resume.pdf" download class="btn">Download My Resume</a>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:jerryotize@gmail.com">jerryotize@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/jeremy-otieno-6a952a32b" target="_blank">LinkedIn Profile</a></p>
+      <p>GitHub: <a href="https://github.com/Spyr-coder" target="_blank">GitHub</a></p>
+    </section>
+
+    <!-- Form Validation -->
+    <section>
+      <h2>Signup Form</h2>
+      <form id="signupForm">
+        <input type="text" id="name" placeholder="Your name" required /><br />
+        <input type="email" id="email" placeholder="Your email" required /><br />
+        <input type="password" id="password" placeholder="Password" required /><br />
+        <button type="submit">Submit</button>
+        <p id="formMessage"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Jerremmy Otieno. All rights reserved.</p>
+  </footer>
+
+  <!-- Link to JS -->
+  <script src="script.js"></script>
 </body>
 </html>
-
