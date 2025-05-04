@@ -149,6 +149,11 @@ footer {
 .btn:hover {
     background-color: #0056b3;
 }
+#clickBtn:hover {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
 
 
     nav ul li {
